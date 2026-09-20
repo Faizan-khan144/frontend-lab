@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulsewave Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="player">
+    <div class="vinyl-area">
+      <div class="vinyl" id="vinyl">
+        <div class="vinyl-label" id="vinylLabel">PW</div>
+      </div>
+      <div class="vinyl-note" id="vinylNote">Synth engine active</div>
+    </div>
+
+    <section class="deck">
+      <header class="deck-head">
+        <span class="brand">Pulsewave</span>
+        <span class="eq" id="eqDots"></span>
+      </header>
+
+      <div class="track-info">
+        <h2 id="trackName">Neon Nights</h2>
+        <p id="trackArtist">Pulsewave Synth Collective</p>
+      </div>
+
+      <div class="seek">
+        <span id="curTime">0:00</span>
+        <div class="seek-bar" id="seekBar">
+          <div class="seek-fill" id="seekFill"></div>
+        </div>
+        <span id="totalTime">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="ctl" id="prevBtn" title="Previous"></button>
+        <button class="ctl play" id="playBtn" title="Play / Pause"></button>
+        <button class="ctl" id="nextBtn" title="Next"></button>
+      </div>
+
+      <div class="vol-row">
+        <span class="vol-icon"></span>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8">
+      </div>
+
+      <canvas id="visualizer" width="400" height="90"></canvas>
+    </section>
+  </main>
+
+  <aside class="playlist" id="playlist"></aside>
+
+  <footer class="foot-note">Click play - music is generated live in your browser by the Web Audio engine.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
