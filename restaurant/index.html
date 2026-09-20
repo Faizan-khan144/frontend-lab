@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Saffron Table</a>
+      <button class="menu-toggle"></button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="tag">Fine Dining</span>
+      <h1>Modern Cuisine<br>Timeless Flavours</h1>
+      <div class="cta">
+        <a href="#book" class="btn solid">Reserve Now</a>
+        <a href="#menu" class="btn ghost">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-flavor">
+      <div class="flavor-card">Seasonal Tasting Menu<br><span>$ 89</span></div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Chef's Menu</h2>
+    <div class="tabs">
+      <button class="tab active" data-tab="starters">Starters</button>
+      <button class="tab" data-tab="mains">Mains</button>
+      <button class="tab" data-tab="desserts">Desserts</button>
+    </div>
+    <div class="menu-list" id="menuList"></div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>What Guests Say</h2>
+    <div class="carousel">
+      <button class="arrow prev">&#8592;</button>
+      <div class="slide-wrap">
+        <div class="slides" id="slides"></div>
+      </div>
+      <button class="arrow next">&#8594;</button>
+    </div>
+  </section>
+
+  <section class="booking" id="book">
+    <h2>Book Your Table</h2>
+    <form id="bookingForm">
+      <input type="text" id="bName" placeholder="Your name" required>
+      <input type="tel" id="bPhone" placeholder="Phone number" required>
+      <select id="bGuests" required>
+        <option value="">Guests</option>
+        <option>1</option><option>2</option><option>3</option>
+        <option>4</option><option>5</option><option>6+</option>
+      </select>
+      <input type="date" id="bDate" required>
+      <input type="time" id="bTime" required>
+      <button type="submit" class="btn solid">Confirm Reservation</button>
+    </form>
+    <div class="booking-result" id="bookingResult"></div>
+  </section>
+
+  <footer>&copy; 2026 Saffron Table Restaurant.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
