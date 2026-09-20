@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Trips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Horizon</a>
+      <button class="menu-toggle"></button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#features">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="tag">Adventure Awaits</span>
+      <h1>Explore The World<br>Your Way</h1>
+      <p>Hand-crafted journeys to 50+ countries with local guides you can trust.</p>
+      <div class="hero-search">
+        <input type="text" id="heroSearch" placeholder="Where to next? Try 'Bali' or 'Iceland'...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div><strong>50+</strong><span>Countries</span></div>
+    <div><strong>12k</strong><span>Travelers</span></div>
+    <div><strong>4.9</strong><span>Rating</span></div>
+    <div><strong>24/7</strong><span>Support</span></div>
+  </div>
+
+  <section class="destinations" id="destinations">
+    <div class="section-head">
+      <h2>Top Destinations</h2>
+      <div class="filters">
+        <div class="range">
+          <label>Max budget: <em id="budgetLabel">$4000</em></label>
+          <input type="range" id="budget" min="500" max="4000" step="100" value="4000">
+        </div>
+        <select id="continent">
+          <option value="All">All Continents</option>
+          <option>Asia</option><option>Europe</option>
+          <option>Americas</option><option>Middle East</option>
+          <option>Africa</option>
+        </select>
+      </div>
+    </div>
+    <div class="dest-grid" id="destGrid"></div>
+    <p class="empty" id="emptyMsg">No destinations match. Try adjusting filters.</p>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Travel With Us</h2>
+    <div class="feature-grid">
+      <div class="feature"><h3>Local Guides</h3><p>Every trip includes a certified local storyteller.</p></div>
+      <div class="feature"><h3>Flexible Cancellation</h3><p>Free reschedule up to 48 hours before departure.</p></div>
+      <div class="feature"><h3>Price Match</h3><p>Found it cheaper? We'll match it and add 5% off.</p></div>
+      <div class="feature"><h3>Carbon Neutral</h3><p>We offset 100% of every journey's emissions.</p></div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="contact">
+    <h2>Get Travel Deals First</h2>
+    <form id="newsForm">
+      <input type="email" id="newsEmail" placeholder="you@email.com" required>
+      <button>Subscribe</button>
+    </form>
+    <p class="news-msg" id="newsMsg"></p>
+  </section>
+
+  <footer>&copy; 2026 Horizon Trips Co.</footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
