@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahara Cloth Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Sahara</a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">Brand</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <span class="tag">New Season 2026</span>
+      <h1>Wear The<br>Moment</h1>
+      <p>Minimal essentials crafted from premium organic fabrics.</p>
+      <a href="#shop" class="btn">Shop Collection</a>
+    </div>
+  </section>
+
+  <section class="collections" id="collections">
+    <div class="coll coll-men"><span>Men</span></div>
+    <div class="coll coll-women"><span>Women</span></div>
+    <div class="coll coll-accessories"><span>Accessories</span></div>
+  </section>
+
+  <section class="shop" id="shop">
+    <h2>The Collection</h2>
+    <div class="shop-controls">
+      <div class="filters" id="filters"></div>
+      <select id="sort">
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty" id="emptyMsg">No products match the selected filters.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Responsible Fashion</h2>
+    <p>Every piece is made in small batches using organic cotton and recycled packaging. Quality over quantity, season after season.</p>
+  </section>
+
+  <footer>&copy; 2026 Sahara Cloth Co.</footer>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head">
+      <h3>Your Bag</h3>
+      <button id="cartClose">&#215;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="checkout" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="backdrop" id="checkoutBackdrop"></div>
+  <div class="checkout-modal" id="checkoutModal">
+    <button class="co-close" id="coClose">&#215;</button>
+    <h3>Order Complete</h3>
+    <p id="coMsg">Your order has been placed.</p>
+  </div>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
