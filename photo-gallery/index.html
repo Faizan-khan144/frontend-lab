@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="head">
+    <a href="#" class="brand">Lumina<span>.</span></a>
+    <p>A tasteful collection of captured moments</p>
+  </header>
+
+  <section class="toolbar">
+    <div class="cats" id="cats"></div>
+    <div class="info"><span id="visCount">0</span> photos shown</div>
+  </section>
+
+  <section class="masonry" id="masonry"></section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">&#215;</button>
+    <button class="lb-arrow lb-prev" id="lbPrev">&#8249;</button>
+    <figure class="lb-stage">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-arrow lb-next" id="lbNext">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
