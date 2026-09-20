@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcore - Smart Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc">
+    <header class="calc-head">
+      <h1>Calcore</h1>
+      <div class="head-actions">
+        <button id="historyBtn" title="History">&#9776;</button>
+        <button class="theme-toggle" id="themeToggle" title="Theme">&#9788;</button>
+      </div>
+    </header>
+
+    <div class="display">
+      <div class="expression" id="expression">0</div>
+      <div class="result" id="result">&nbsp;</div>
+    </div>
+
+    <div class="mode-tabs">
+      <button class="mode active" data-mode="basic">Basic</button>
+      <button class="mode" data-mode="scientific">Scientific</button>
+    </div>
+
+    <div class="sci-pad hidden" id="sciPad">
+      <button class="key fn" data-k="sin">sin</button>
+      <button class="key fn" data-k="cos">cos</button>
+      <button class="key fn" data-k="tan">tan</button>
+      <button class="key fn" data-k="sqrt">&#8730;</button>
+      <button class="key fn" data-k="ln">ln</button>
+      <button class="key fn" data-k="log">log</button>
+      <button class="key fn" data-k="x2">x&sup2;</button>
+      <button class="key fn" data-k="x3">x&sup3;</button>
+      <button class="key const" data-k="pi">&#960;</button>
+      <button class="key const" data-k="e">e</button>
+      <button class="key fn" data-k="fact">n!</button>
+      <button class="key fn" data-k="(">(</button>
+    </div>
+
+    <div class="pad">
+      <button class="key clear" data-k="AC">AC</button>
+      <button class="key del" data-k="del">&#9003;</button>
+      <button class="key opr" data-k="%">%</button>
+      <button class="key opr" data-k="/">&divide;</button>
+      <button class="key num" data-k="7">7</button>
+      <button class="key num" data-k="8">8</button>
+      <button class="key num" data-k="9">9</button>
+      <button class="key opr" data-k="*">&times;</button>
+      <button class="key num" data-k="4">4</button>
+      <button class="key num" data-k="5">5</button>
+      <button class="key num" data-k="6">6</button>
+      <button class="key opr" data-k="-">-</button>
+      <button class="key num" data-k="1">1</button>
+      <button class="key num" data-k="2">2</button>
+      <button class="key num" data-k="3">3</button>
+      <button class="key opr" data-k="+">+</button>
+      <button class="key num" data-k="0">0</button>
+      <button class="key num" data-k=".">.</button>
+      <button class="key fn" data-k=")">)</button>
+      <button class="key equals" data-k="=">=</button>
+    </div>
+  </main>
+
+  <aside class="history" id="historyPanel">
+    <div class="history-head">
+      <h3>History</h3>
+      <button id="clearHistory">Clear</button>
+    </div>
+    <div class="history-list" id="historyList"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
