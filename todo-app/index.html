@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus - Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-head">
+      <h1>Focus<span>.</span></h1>
+      <button class="theme-toggle" id="themeToggle">Dark</button>
+    </header>
+
+    <section class="summary">
+      <div class="ring" id="progressRing">
+        <div class="ring-center">
+          <strong id="progressPct">0%</strong>
+          <span>done</span>
+        </div>
+      </div>
+      <div class="summary-stats">
+        <div class="stat-box"><strong id="sTotal">0</strong><span>Total</span></div>
+        <div class="stat-box"><strong id="sActive">0</strong><span>Active</span></div>
+        <div class="stat-box"><strong id="sDone">0</strong><span>Completed</span></div>
+      </div>
+    </section>
+
+    <section class="composer">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="120">
+      <div class="priority-pick">
+        <button class="pr high active" data-p="high">High</button>
+        <button class="pr medium" data-p="medium">Medium</button>
+        <button class="pr low" data-p="low">Low</button>
+      </div>
+      <button id="addBtn" class="add-btn">Add Task</button>
+    </section>
+
+    <section class="toolbar">
+      <div class="filter-tabs">
+        <button class="ftab active" data-f="all">All</button>
+        <button class="ftab" data-f="active">Active</button>
+        <button class="ftab" data-f="done">Done</button>
+      </div>
+      <input type="search" id="searchInput" placeholder="Search tasks...">
+    </section>
+
+    <ul class="task-list" id="taskList"></ul>
+    <div class="empty-state" id="emptyState">
+      <span class="empty-icon"></span>
+      <p>Nothing here yet. Add your first task above.</p>
+    </div>
+
+    <div class="list-foot">
+      <button class="clear-btn" id="clearDone">Clear completed</button>
+      <span id="remainingLbl"></span>
+    </div>
+  </main>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
