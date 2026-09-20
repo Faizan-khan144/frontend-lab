@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronForge Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">IronForge</a>
+      <button class="menu-toggle"></button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#bmi">BMI Check</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#pricing" class="join">Join Now</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="tag">Train Hard. Live Strong.</span>
+      <h1>Forged By<br>Discipline</h1>
+      <p>24/7 access, expert coaches and a community that pushes you further.</p>
+      <div class="cta">
+        <a href="#pricing" class="btn">Start Training</a>
+        <span class="members">2,400+ active members</span>
+      </div>
+    </div>
+    <div class="ring"></div>
+  </section>
+
+  <section class="classes" id="classes">
+    <h2>Signature Classes</h2>
+    <div class="class-grid" id="classGrid"></div>
+  </section>
+
+  <section class="bmi" id="bmi">
+    <div class="bmi-card">
+      <h2>Quick BMI Check</h2>
+      <div class="bmi-inputs">
+        <input type="number" id="bmiHeight" placeholder="Height (cm)" min="1">
+        <input type="number" id="bmiWeight" placeholder="Weight (kg)" min="1">
+      </div>
+      <button id="calcBmi" class="btn">Calculate</button>
+      <div class="bmi-result" id="bmiResult"></div>
+      <div class="bmi-scale">
+        <span>Under</span><span>Normal</span><span>Over</span><span>Obese</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Membership Plans</h2>
+    <div class="toggle">
+      <span>Monthly</span>
+      <label class="switch"><input type="checkbox" id="billingToggle"><span class="slider"></span></label>
+      <span>Yearly <em>Save 20%</em></span>
+    </div>
+    <div class="plans" id="plans"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Start Your Journey</h2>
+    <p>Drop by for a free tour. 88 Power Lane, Lift City.</p>
+    <p class="phone">+1 555 010 7788</p>
+  </section>
+
+  <footer>&copy; 2026 IronForge Gym.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
