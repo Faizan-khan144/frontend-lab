@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Crumb Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Golden Crumb</a>
+      <button class="menu-toggle" aria-label="Toggle menu"></button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cart">
+        <span class="cart-icon"></span>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="tag">Since 1998</span>
+      <h1>Freshly Baked<br>Every Morning</h1>
+      <p>Artisan breads, flaky pastries and desserts baked with love from organic ingredients.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Our Best Sellers</h2>
+    <div class="filter-bar">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="bread">Bread</button>
+      <button class="filter" data-filter="pastry">Pastry</button>
+      <button class="filter" data-filter="cake">Cake</button>
+    </div>
+    <div class="products" id="products"></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <span class="tag">Our Story</span>
+      <h2>Baked With Passion</h2>
+      <p>What started as a small family kitchen is now the heart of the neighbourhood. Every loaf is hand-shaped, every recipe perfected over decades.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>25+</strong><span>Years</span></div>
+      <div class="stat"><strong>40+</strong><span>Recipes</span></div>
+      <div class="stat"><strong>12k</strong><span>Happy Customers</span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Visit Us</h2>
+    <p>12 Flour Street, Dough Town</p>
+    <p>Mon - Sun : 7:00 AM - 9:00 PM</p>
+    <p class="phone">+1 555 010 2233</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Golden Crumb Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
