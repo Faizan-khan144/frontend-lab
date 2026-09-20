@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyCast Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>SkyCast</h1>
+      <div class="unit-toggle">
+        <button class="unit active" data-unit="c">&deg;C</button>
+        <button class="unit" data-unit="f">&deg;F</button>
+      </div>
+    </header>
+
+    <form class="search" id="searchForm">
+      <input type="text" id="cityInput" placeholder="Search city, e.g. Karachi" autocomplete="off">
+      <button type="submit">Search</button>
+      <button type="button" class="locate" id="locateBtn" title="Use my location">&#9673;</button>
+    </form>
+
+    <div class="error-banner" id="errorBox"></div>
+
+    <section class="current-card" id="currentCard">
+      <div class="current-top">
+        <div>
+          <h2 id="cityName">--</h2>
+          <span class="weather-desc" id="weatherDesc">Loading weather...</span>
+        </div>
+        <div class="big-temp" id="bigTemp">--&deg;</div>
+      </div>
+      <div class="cond-icon" id="condIcon"></div>
+      <div class="current-meta">
+        <div><strong id="feels">--</strong><span>Feels like</span></div>
+        <div><strong id="humidity">--</strong><span>Humidity</span></div>
+        <div><strong id="wind">--</strong><span>Wind km/h</span></div>
+        <div><strong id="pressure">--</strong><span>Pressure hPa</span></div>
+      </div>
+    </section>
+
+    <section class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </section>
+
+    <p class="credit">Data by Open-Meteo</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
