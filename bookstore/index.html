@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageTurner Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">PageTurner</a>
+      <nav class="nav-links">
+        <a href="#books">Browse</a>
+        <a href="#library">My Library</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="lib-btn" id="libBtn">Library <span id="libCount">0</span></button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="tag">Independent Bookstore</span>
+    <h1>Find Your<br>Next Story</h1>
+    <div class="search-wrap">
+      <input type="search" id="search" placeholder="Search by title, author or genre...">
+    </div>
+  </section>
+
+  <section id="books" class="books">
+    <div class="controls">
+      <div class="chips" id="chips"></div>
+      <select id="sort">
+        <option value="title">Sort: A-Z</option>
+        <option value="year">Sort: Newest</option>
+        <option value="rating">Sort: Top Rated</option>
+      </select>
+    </div>
+    <div class="book-grid" id="bookGrid"></div>
+    <p class="empty" id="emptyMsg">No books match your search.</p>
+  </section>
+
+  <section id="library" class="library">
+    <h2>My Reading List</h2>
+    <div class="library-grid" id="libraryGrid"></div>
+    <p class="empty" id="libEmpty">Your reading list is empty. Tap a heart to add books.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About the Shelf</h2>
+    <p>PageTurner is an online collection of hand-picked titles across every genre. Your reading list is saved in your browser, so it follows you everywhere.</p>
+  </section>
+
+  <footer>&copy; 2026 PageTurner Books. All rights reserved.</footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
