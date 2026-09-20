@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainDuel - Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+
+    <section class="screen" id="startScreen">
+      <span class="logo">BrainDuel</span>
+      <h1>Are You<br>Sharp Enough?</h1>
+      <p>Answer 10 questions before the clock runs out.</p>
+      <div class="category-pick">
+        <h3>Pick a category</h3>
+        <div class="cat-grid" id="catGrid"></div>
+      </div>
+      <button class="btn-start" id="startBtn">Start Quiz</button>
+    </section>
+
+    <section class="screen hidden" id="gameScreen">
+      <header class="game-head">
+        <div class="hud">
+          <div class="hud-box"><span>Question</span><strong id="qIndex">1/10</strong></div>
+          <div class="hud-box"><span>Score</span><strong id="qScore">0</strong></div>
+        </div>
+        <div class="timer" id="timerWrap">
+          <span class="timer-bar" id="timerBar"></span>
+          <strong id="timerText">20</strong>
+        </div>
+      </header>
+
+      <div class="question-card">
+        <h2 id="qText">Question text</h2>
+        <div class="options" id="options"></div>
+      </div>
+
+      <div class="game-foot">
+        <span id="feedback"></span>
+        <button class="btn-next" id="nextBtn">Next</button>
+      </div>
+    </section>
+
+    <section class="screen hidden" id="resultScreen">
+      <div class="result-card">
+        <div class="result-ring" id="resultRing">
+          <div class="result-center">
+            <strong id="resultPct">0%</strong>
+            <span id="resultGrade"></span>
+          </div>
+        </div>
+        <h2 id="resultTitle">Great job!</h2>
+        <p id="resultText">You scored 0 out of 10.</p>
+        <div class="result-stats">
+          <div class="rstat"><strong id="rCorrect">0</strong><span>Correct</span></div>
+          <div class="rstat"><strong id="rWrong">0</strong><span>Wrong</span></div>
+          <div class="rstat"><strong id="rTime">0s</strong><span>Time</span></div>
+        </div>
+        <div class="result-actions">
+          <button class="btn-start" id="retryBtn">Play Again</button>
+          <button class="btn-ghost" id="homeBtn">Change Category</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
