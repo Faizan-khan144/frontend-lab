@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewed Notions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Brewed Notions</a>
+      <button class="menu-toggle"></button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">Our Story</a>
+        <a href="#visit">Locations</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle">Dark</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-slider" id="slider"></div>
+    <div class="hero-content">
+      <span class="tag">Small Batch</span>
+      <h1 id="heroTitle">Single Origin Pour Over</h1>
+      <p id="heroDesc">Ethiopian Yirgacheffe roasted fresh every week, brewed to order.</p>
+      <div class="slider-dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Drink Menu</h2>
+    <div class="tabs">
+      <button class="tab active" data-tab="espresso">Espresso</button>
+      <button class="tab" data-tab="cold">Cold Brew</button>
+      <button class="tab" data-tab="special">Specialty</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Why We're Different</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <span>01</span>
+        <h3>Direct Trade</h3>
+        <p>We source beans directly from farmers at above market prices.</p>
+      </div>
+      <div class="about-card">
+        <span>02</span>
+        <h3>Roasted Weekly</h3>
+        <p>Small batches roasted every Tuesday to lock in freshness.</p>
+      </div>
+      <div class="about-card">
+        <span>03</span>
+        <h3>Zero Waste</h3>
+        <p>Grounds are composted and cups are 100% compostable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <h2>Find Us</h2>
+    <div class="locations" id="locations"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brewed Notions Coffee Co.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
