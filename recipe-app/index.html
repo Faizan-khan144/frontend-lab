@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simmer - Recipe Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="logo">Simmer</a>
+    <nav class="nav-links">
+      <a href="#recipes">Recipes</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="tag">450+ Recipes</span>
+    <h1>Cook Something<br>Amazing Tonight</h1>
+    <div class="search-wrap">
+      <input type="search" id="searchInput" placeholder="Search recipes, e.g. pasta, chicken...">
+    </div>
+  </section>
+
+  <section class="recipes" id="recipes">
+    <div class="filters" id="filters"></div>
+    <div class="recipe-grid" id="recipeGrid"></div>
+    <p class="empty" id="emptyMsg">No recipes found. Try a different search.</p>
+  </section>
+
+  <section class="favorites" id="favorites">
+    <h2>My Favorites</h2>
+    <div class="recipe-grid" id="favGrid"></div>
+    <p class="empty" id="favEmpty">No favorites yet. Tap the star on any recipe.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why Simmer?</h2>
+    <p>Simple, tested recipes with step-by-step guidance, estimated times and adjustable servings so every home cook can nail it.</p>
+  </section>
+
+  <footer>&copy; 2026 Simmer Recipe Studio</footer>
+
+  <div class="modal" id="modal">
+    <div class="backdrop" id="backdrop"></div>
+    <div class="recipe-modal" id="recipeModal"></div>
+  </div>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
